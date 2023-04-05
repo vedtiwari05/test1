@@ -1,0 +1,92 @@
+* Basic styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+nav {
+	background-color: #333;
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	position: relative;
+}
+nav ul li a {
+	display: block;
+	padding: 1rem;
+	color: white;
+	text-decoration: none;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #333;
+	padding: 0;
+}
+nav ul ul li {
+	position: relative;
+}
+nav ul ul li a {
+	display: block;
+	padding: 1rem;
+	color: white;
+	text-decoration: none;
+}
+nav ul ul ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: #333;
+	padding: 0;
+}
+nav ul ul ul li {
+	position: relative;
+}
+nav ul ul ul li a {
+	display: block;
+	padding: 1rem;
+	color: white;
+	text-decoration: none;
+}
+.login-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+h2 {
+	margin-bottom: 1rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+label {
+	margin-bottom: 0.5rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="checkbox"] {
+	width: 100%;
+	padding: 0.5rem;}
